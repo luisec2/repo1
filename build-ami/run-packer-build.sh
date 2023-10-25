@@ -3,12 +3,12 @@
 #  scrit to run packer build
 #
 set -x
-packer build -var 'ami_name=ami-luis' \
-             -var 'base_ami=ami-04340f530bb99ce82' \
-             -var 'vpc_id=vpc-9e5399e3' \
-             -var 'subnet_id=subnet-43b63262' \
+packer build -var 'ami_name=ami-gend-luisworker' \
+             -var 'base_ami=ami-0c833a5f2f808b646' \
+             -var 'vpc_id=vpc-0baed686286086d72' \
+             -var 'subnet_id=subnet-0a582c59f124758b8' \
              packer.json
 
 # vpc-9e5399e3    is a public vpc  ((( change it to your own vpc
-# subnet-43b63262 is a oublic subnet ((( change it to your own subnaet
+# subnet-43b63262 is a public subnet ((( change it to your own subnaet
 #

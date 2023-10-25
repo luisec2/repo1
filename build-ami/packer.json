@@ -1,8 +1,8 @@
 {
  "variables": {
-   "instance_size": "t2.small",
-   "ami_name": "ami-thomsen",
-   "base_ami": "ami-1853ac65",
+   "instance_size": "t2.medium",
+   "ami_name": "ami-worker-jenkins",
+   "base_ami": "ami-0c833a5f2f808b646",
    "ssh_username": "centos",
    "vpc_id": "",
    "subnet_id": ""
