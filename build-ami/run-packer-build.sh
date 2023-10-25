@@ -3,7 +3,8 @@
 #  scrit to run packer build
 #
 set -x
-PACKER_LOG=1; packer build -var 'ami_name=ami-gend-luisworker' \
+export PACKER_LOG=1
+             packer build -var 'ami_name=ami-gend-luisworker' \
              -var 'base_ami=ami-0c833a5f2f808b646' \
              -var 'vpc_id=vpc-0baed686286086d72' \
              -var 'subnet_id=subnet-0a582c59f124758b8' \
